@@ -237,6 +237,9 @@ msgstr "<strong>An error occurred while receiving your data from the OpenId prov
 msgid "plugins.generic.openid.error.openid.cert.desc"
 msgstr "<strong>An error occurred while validation and extracting your data.</strong><br />The service may not be available right now.<br />Please try again later and <a href='mailto:{$supportEmail}'>contact technical support</a> if the problem still exists."
 
+msgid "plugins.generic.openid.error.openid.twofa.desc"
+msgstr "Orcid two-factor authentication is required for login. Please go to <a href=\"https://orcid.org\">orcid.org</a>, log into your Orcid profile and turn on two-factor authentication in the security section of your account settings."
+
 msgid "plugins.generic.openid.error.openid.disabled.without"
 msgstr "<strong>This account is disabled without any specific reason.</strong><br />Please <a href='mailto:{$supportEmail}'>contact technical support</a> to enable this account."
 
