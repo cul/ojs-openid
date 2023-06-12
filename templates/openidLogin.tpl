@@ -53,7 +53,7 @@
 					<fieldset class="fields">
 						<div class="username">
 							<label>
-								<span class="label">
+								<span>
 									{translate key="user.username"}
 									<span class="required" aria-hidden="true">*</span>
 									<span class="pkp_screen_reader">
@@ -65,7 +65,7 @@
 						</div>
 						<div class="password">
 							<label>
-								<span class="label">
+								<span>
 									{translate key="user.password"}
 									<span class="required" aria-hidden="true">*</span>
 									<span class="pkp_screen_reader">
@@ -83,7 +83,7 @@
 						<div class="remember checkbox">
 							<label>
 								<input type="checkbox" name="remember" id="remember" value="1">
-								<span class="label">
+								<span>
 									{translate key="user.login.rememberUsernameAndPassword"}
 								</span>
 							</label>
