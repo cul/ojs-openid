@@ -76,7 +76,7 @@ class OpenIDHandler extends Handler
 		if (isset($token) && isset($publicKey)) {
 			$tokenPayload = $this->_validateAndExtractToken($token, $publicKey);
                         //CUL customization: require two-factor authentication
-                        if ($tokenPayload['amr'] != 'mfa') {
+                        if ($settings['orcid2fa'] == true && $tokenPayload['amr'] != 'mfa') {
 				$ssoErrors['sso_error'] = '2fa';
                 		return $request->redirect($context, 'login', null, null, $ssoErrors);
 			}

@@ -224,7 +224,7 @@ class OpenIDLoginHandler extends Handler
 				$templateMgr->assign('errorMsg', 'plugins.generic.openid.error.openid.cert.desc');
 				break;
 			case '2fa':
-                                $templateMgr->assign('errorMsg', 'plugins.generic.openid.error.openid.twofa.desc');
+                                $templateMgr->assign('errorMsg', 'plugins.generic.openid.error.openid.orcid2fa.desc');
 				break;
 			case 'disabled':
 				$reason = $request->getUserVar('sso_error_msg');
