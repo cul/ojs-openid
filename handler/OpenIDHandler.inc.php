@@ -75,8 +75,8 @@ class OpenIDHandler extends Handler
 
 		if (isset($token) && isset($publicKey)) {
 			$tokenPayload = $this->_validateAndExtractToken($token, $publicKey);
-                        //CUL customization: require two-factor authentication
-                        if ($tokenPayload['amr'] != 'mfa') {
+                        //check if orcid two-factor authentication is required
+                        if ($settings['orcid2fa'] == true && $tokenPayload['amr'] != 'mfa') {
 				$ssoErrors['sso_error'] = '2fa';
                 		return $request->redirect($context, 'login', null, null, $ssoErrors);
 			}
@@ -404,7 +404,7 @@ class OpenIDHandler extends Handler
 								'given_name' => property_exists($jwtPayload, 'given_name') ? $jwtPayload->given_name : null,
 								'family_name' => property_exists($jwtPayload, 'family_name') ? $jwtPayload->family_name : null,
 								'email_verified' => property_exists($jwtPayload, 'email_verified') ? $jwtPayload->email_verified : null,
-						//Cul customization: extracting amr attribute 
+						//orcid property for checking two factor authentication status 
 								'amr' => property_exists($jwtPayload, 'amr') ? $jwtPayload->amr : null,
 							];
 						}
