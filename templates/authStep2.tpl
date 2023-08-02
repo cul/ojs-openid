@@ -52,7 +52,7 @@
 				<div class="fields">
 					<div class="given_name">
 						<label>
-							<span class="label">
+							<span>
 								{translate key="user.givenName"}
 								<span class="required" aria-hidden="true">*</span>
 								<span class="pkp_screen_reader">
@@ -64,7 +64,7 @@
 					</div>
 					<div class="family_name">
 						<label>
-							<span class="label">
+							<span>
 								{translate key="user.familyName"}
 								<span class="required" aria-hidden="true">*</span>
 								<span class="pkp_screen_reader">
@@ -76,7 +76,7 @@
 					</div>
 					<div class="email">
 						<label>
-							<span class="label">
+							<span>
 								{translate key="user.email"}
 								<span class="required" aria-hidden="true">*</span>
 								<span class="pkp_screen_reader">
@@ -88,7 +88,7 @@
 					</div>
 					<div class="username">
 						<label>
-							<span class="label">
+							<span>
 								{translate key="user.username"}
 								<span class="required" aria-hidden="true">*</span>
 								<span class="pkp_screen_reader">
@@ -100,7 +100,7 @@
 					</div>
 					<div class="affiliation">
 						<label>
-							<span class="label">
+							<span>
 								{translate key="user.affiliation"}
 								<span class="required" aria-hidden="true">*</span>
 								<span class="pkp_screen_reader">
@@ -112,7 +112,7 @@
 					</div>
 					<div class="country">
 						<label>
-							<span class="label">
+							<span>
 								{translate key="common.country"}
 								<span class="required" aria-hidden="true">*</span>
 								<span class="pkp_screen_reader">
@@ -191,7 +191,7 @@
 						</div>
 						<div id="reviewerInterests" class="reviewer_interests">
 							<label>
-								<span class="label">
+								<span>
 									{translate key="user.interests"}
 								</span>
 								<input type="text" name="interests" id="interests" value="{$interests|escape}" class="reviewerGroupInput">
@@ -217,7 +217,7 @@
 					{/if}
 					<div class="username">
 						<label>
-						<span class="label">
+						<span>
 							{translate key="plugins.generic.openid.step2.connect.username"}
 							<span class="required" aria-hidden="true">*</span>
 							<span class="pkp_screen_reader">
@@ -230,7 +230,7 @@
 					</div>
 					<div class="password">
 						<label>
-						<span class="label">
+						<span>
 							{translate key="user.password"}
 							<span class="required" aria-hidden="true">*</span>
 							<span class="pkp_screen_reader">
